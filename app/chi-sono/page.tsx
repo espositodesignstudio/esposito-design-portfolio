@@ -32,6 +32,7 @@ export default function ChiSonoPage() {
             loop
             muted
             playsInline
+            preload="metadata"
             className="w-full h-auto block object-contain"
           />
         </div>

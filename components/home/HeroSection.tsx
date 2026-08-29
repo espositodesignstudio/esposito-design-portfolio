@@ -11,11 +11,10 @@ export default function HeroSection() {
       {/* Full-width Background Image Without Blue Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/sito/hero-home4.png"
+          src="/sito/hero-home4.webp"
           alt="Esposito Design Studio Showcase Background"
           fill
           priority
-          unoptimized
           className="object-cover object-center w-full h-full"
           sizes="100vw"
         />

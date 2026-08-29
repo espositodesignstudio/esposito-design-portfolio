@@ -82,6 +82,7 @@ export default function SingleProjectPage({ params }: PageProps) {
                 loop
                 muted
                 playsInline
+                preload="metadata"
                 className="w-full h-full object-cover"
               />
             ) : (
@@ -90,6 +91,7 @@ export default function SingleProjectPage({ params }: PageProps) {
                 alt={coverMedia.alt || project.title}
                 fill
                 priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
                 className="object-cover"
               />
             )}
@@ -144,6 +146,7 @@ export default function SingleProjectPage({ params }: PageProps) {
                     loop
                     muted
                     playsInline
+                    preload="metadata"
                     className="w-full h-full object-cover"
                   />
                 ) : (
@@ -151,6 +154,9 @@ export default function SingleProjectPage({ params }: PageProps) {
                     src={galleryItems[0].src}
                     alt={galleryItems[0].alt || `${project.title} detail 1`}
                     fill
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
                     className="object-cover"
                   />
                 )}
@@ -182,6 +188,7 @@ export default function SingleProjectPage({ params }: PageProps) {
                     loop
                     muted
                     playsInline
+                    preload="metadata"
                     className="w-full h-full object-cover"
                   />
                 ) : (
@@ -189,6 +196,9 @@ export default function SingleProjectPage({ params }: PageProps) {
                     src={item.src}
                     alt={item.alt || `${project.title} detail ${idx + 2}`}
                     fill
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
                     className="object-cover"
                   />
                 )}

@@ -30,6 +30,7 @@ export default function LavoriPage() {
             loop
             muted
             playsInline
+            preload="metadata"
             className="w-full h-full object-cover object-center"
           />
         </div>
