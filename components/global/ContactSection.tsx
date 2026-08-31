@@ -92,7 +92,13 @@ export default function ContactSection() {
               </p>
               <button
                 type="button"
-                onClick={() => setSubmitted(false)}
+                onClick={() => {
+                  setName("");
+                  setEmail("");
+                  setPhone("");
+                  setMessage("");
+                  setSubmitted(false);
+                }}
                 className="pill-btn pill-btn-primary mt-4"
               >
                 INVIA UN ALTRO MESSAGGIO
