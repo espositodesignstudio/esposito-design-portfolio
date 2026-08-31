@@ -113,6 +113,16 @@ export default function Footer() {
                   Contatti
                 </Link>
               </li>
+              <li>
+                <Link href="/privacy-policy" className="hover:text-[#D56108] transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/cookie-policy" className="hover:text-[#D56108] transition-colors">
+                  Cookie Policy
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -136,7 +146,7 @@ export default function Footer() {
           </div>
 
           {/* COLUMN 3: Social Round Icons + Copyright */}
-          <div className="space-y-4 flex flex-col items-center md:items-end text-center md:text-right relative">
+          <div className="space-y-3 flex flex-col items-center md:items-end text-center md:text-right relative">
             {/* Round Social Icons */}
             <div className="flex items-center gap-3 relative">
               {/* 1. LinkedIn */}
@@ -170,10 +180,22 @@ export default function Footer() {
               </a>
             </div>
 
-            {/* Copyright */}
+            {/* Copyright & Legal Links */}
             <p className="font-nunito font-extrabold text-sm md:text-base text-[#F1E3CB]">
-              © {currentYear} Esposito Design
+              © {currentYear} Esposito Design · Tutti i diritti riservati
             </p>
+            <p className="font-nunito text-xs text-[#F1E3CB]/80">
+              Sito creato da Esposito Design
+            </p>
+            <div className="flex items-center gap-2.5 pt-0.5 text-xs text-[#F1E3CB]/90 font-bold">
+              <Link href="/privacy-policy" className="hover:underline hover:text-white transition-colors">
+                Privacy Policy
+              </Link>
+              <span>•</span>
+              <Link href="/cookie-policy" className="hover:underline hover:text-white transition-colors">
+                Cookie Policy
+              </Link>
+            </div>
           </div>
 
         </div>

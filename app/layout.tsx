@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { HoverProvider } from "@/components/global/CursorHoverLabel";
+import AnalyticsWrapper from "@/components/global/AnalyticsWrapper";
 import "./globals.css";
 
 const pallyBold = localFont({
@@ -58,6 +59,7 @@ export default function RootLayout({
     >
       <body className="bg-[#F1E3CB] text-[#0267C1] min-h-screen font-body">
         <HoverProvider>{children}</HoverProvider>
+        <AnalyticsWrapper />
       </body>
     </html>
   );
