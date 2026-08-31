@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   description:
     "Portfolio ufficiale di Peppe Esposito - Graphic & UX/UI Designer specializzato in identità visive, interfacce digitali e produzione custom in Stampa 3D.",
   icons: {
-    icon: "/assets/Blu.png",
+    icon: "/icon.png",
   },
 };
 
