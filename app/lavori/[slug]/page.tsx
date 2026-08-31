@@ -73,8 +73,8 @@ export default function SingleProjectPage({ params }: PageProps) {
 
       {/* Opening Cover Media - Video or Image */}
       {coverMedia && (
-        <section className="relative w-full max-w-7xl mx-auto px-10 md:px-12 py-8">
-          <div className="relative aspect-[16/9] w-full rounded-3xl overflow-hidden bg-[#0267C1]/10 border border-[#0267C1]/10 shadow-lg">
+        <section className="relative w-full max-w-7xl mx-auto px-0 md:px-12 py-4 md:py-8">
+          <div className="relative aspect-[16/9] w-full rounded-none md:rounded-3xl overflow-hidden bg-[#0267C1]/10 border-y md:border border-[#0267C1]/10 shadow-lg">
             {coverMedia.type === "video" ? (
               <video
                 src={coverMedia.src}
@@ -100,7 +100,7 @@ export default function SingleProjectPage({ params }: PageProps) {
       )}
 
       {/* Project Details & Strategy Section */}
-      <section className="max-w-5xl mx-auto px-10 md:px-12 py-6 space-y-8">
+      <section className="max-w-5xl mx-auto px-6 md:px-12 py-6 space-y-8">
         <TextReveal>
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-8 py-4 text-center text-sm md:text-base text-[#0267C1] max-w-full">
             <div className="flex items-center gap-2">
@@ -134,11 +134,11 @@ export default function SingleProjectPage({ params }: PageProps) {
 
       {/* Dynamic Full-Width Media Gallery */}
       {galleryItems.length > 0 && (
-        <section className="max-w-6xl mx-auto px-10 md:px-12 py-12 space-y-12">
+        <section className="max-w-6xl mx-auto px-0 md:px-12 py-8 md:py-12 space-y-8 md:space-y-12">
           {/* Item 1 - Full Width Horizontal */}
           {galleryItems[0] && (
             <TextReveal>
-              <div className="relative aspect-[16/9] w-full rounded-3xl overflow-hidden bg-[#0267C1]/10 border border-[#0267C1]/10 shadow-md">
+              <div className="relative aspect-[16/9] w-full rounded-none md:rounded-3xl overflow-hidden bg-[#0267C1]/10 border-y md:border border-[#0267C1]/10 shadow-md">
                 {galleryItems[0].type === "video" ? (
                   <video
                     src={galleryItems[0].src}
@@ -166,7 +166,7 @@ export default function SingleProjectPage({ params }: PageProps) {
 
           {/* Visual Direction Narrative Paragraph */}
           <TextReveal delay={0.1}>
-            <div className="max-w-4xl mx-auto py-6 space-y-4 text-center">
+            <div className="max-w-4xl mx-auto px-6 md:px-0 py-6 space-y-4 text-center">
               <h2 className="text-[#0267C1] [text-wrap:balance]">
                 {project.visualDirectionTitle || "DIREZIONE VISIVA & SVILUPPO CONCETTUALE"}
               </h2>
@@ -180,7 +180,7 @@ export default function SingleProjectPage({ params }: PageProps) {
           {/* All Remaining Gallery Items - Stacked Vertically, All Horizontal aspect-[16/9] */}
           {galleryItems.slice(1).map((item, idx) => (
             <TextReveal key={idx}>
-              <div className="relative aspect-[16/9] w-full rounded-3xl overflow-hidden bg-[#0267C1]/10 border border-[#0267C1]/10 shadow-md">
+              <div className="relative aspect-[16/9] w-full rounded-none md:rounded-3xl overflow-hidden bg-[#0267C1]/10 border-y md:border border-[#0267C1]/10 shadow-md">
                 {item.type === "video" ? (
                   <video
                     src={item.src}

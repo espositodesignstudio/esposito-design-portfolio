@@ -82,7 +82,7 @@ export default function Footer() {
       {/* Top Flame Silhouette Transition from Secondary Cream to Primary Blue */}
       <FlameDivider />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 pt-6 pb-8 md:pt-10 md:pb-14 flex flex-col gap-10 md:gap-14">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 pt-6 pb-28 md:pt-10 md:pb-14 flex flex-col gap-10 md:gap-14">
 
         {/* 3 COLUMNS BODY (Reference Layout) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-start text-center md:text-left">
@@ -179,7 +179,7 @@ export default function Footer() {
         </div>
 
         {/* BOTTOM SECTION: Il Logo Vettoriale Sotto (Replacing Breaver Studios) */}
-        <div className="w-full max-w-5xl mx-auto pt-2 pb-2 px-2 flex justify-center items-center">
+        <div className="w-full max-w-5xl mx-auto pt-2 pb-8 md:pb-2 px-2 flex justify-center items-center">
           <svg
             viewBox="0 0 418 179.8"
             className="w-full h-auto max-h-[260px] md:max-h-[380px] drop-shadow-sm"
