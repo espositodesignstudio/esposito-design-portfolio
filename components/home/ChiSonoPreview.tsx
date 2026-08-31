@@ -29,13 +29,13 @@ export default function ChiSonoPreview() {
           <div className="md:col-span-7 space-y-6 text-center md:text-left">
             <TextReveal>
               <h2 className="text-[#0267C1] mb-4 [text-wrap:balance]">
-                PENSIAMO IN GRANDE, <br className="hidden sm:inline" /> CURIAMO OGNI DETTAGLIO.
+                VISIONE E DETTAGLIO.
               </h2>
             </TextReveal>
 
             <TextReveal delay={0.1}>
               <p className="text-[#0267C1]/90 [text-wrap:balance]">
-                Sono Peppe Esposito, Graphic & UX/UI Designer. Aiuto brand e aziende <br className="hidden sm:inline" /> a distinguersi con identità visive, interfacce digitali <br className="hidden sm:inline" /> e prodotti custom in stampa 3D.
+                Sono Peppe Esposito, Graphic & UX/UI Designer. Costruisco identità visive distintive, interfacce digitali orientate all&apos;utente e, quando serve, oggetti fisici realizzati su misura in stampa 3D.
               </p>
             </TextReveal>
 

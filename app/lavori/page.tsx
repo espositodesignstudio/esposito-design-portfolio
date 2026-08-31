@@ -51,7 +51,7 @@ export default function LavoriPage() {
 
         <TextReveal delay={0.15}>
           <p className="text-[#0267C1]/90 max-w-3xl mx-auto text-base md:text-lg [text-wrap:pretty]">
-            Ogni progetto è il risultato di una profonda ricerca visiva, cura per i dettagli e passione per il design, sia digitale che tangibile. Esplora identità visive e progetti UX/UI, e scopri come do forma alle idee.
+            Ogni progetto nasce da ricerca visiva, cura per i dettagli e passione per il design, digitale e tangibile.
           </p>
         </TextReveal>
       </section>

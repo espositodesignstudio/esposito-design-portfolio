@@ -42,20 +42,20 @@ export default function ChiSonoPage() {
       <section className="max-w-5xl mx-auto px-6 md:px-12 my-[60px] md:my-[100px] text-center space-y-6">
         <TextReveal>
           <h1 className="text-[#0267C1] max-w-4xl mx-auto">
-            DAL PIXEL ALL&apos;OGGETTO. STESSA CURA.
+            DAL PIXEL ALL&apos;OGGETTO.
           </h1>
         </TextReveal>
 
         <TextReveal delay={0.1}>
           <div className="space-y-6 text-[#0267C1]/90 pt-4 max-w-3xl mx-auto text-center">
             <p>
-              Ciao! Sono Peppe Esposito, un designer multidisciplinare appassionato di estetica, funzionalità e produzione fisica.
+              Sono Peppe Esposito, designer multidisciplinare. Lavoro tra estetica, funzionalità e produzione fisica.
             </p>
             <p>
-              Ho fondato Esposito Design per unire due mondi apparentemente distanti ma fortemente complementari: la progettazione visiva/digitale (Branding e UX/UI Design) e la fabbricazione digitale tramite Stampa 3D di oggetti su misura.
+              Ho scelto di unire due discipline complementari: la progettazione visiva e digitale (branding e UX/UI design) e la fabbricazione tramite stampa 3D di oggetti su misura.
             </p>
             <p>
-              Ogni progetto nasce da una cura maniacale per i dettagli, da un approccio handmade e organico e da una ricerca costante di solida utilità.
+              Ogni progetto nasce da attenzione ai dettagli, approccio handmade e ricerca costante di utilità concreta.
             </p>
           </div>
         </TextReveal>
@@ -87,12 +87,12 @@ export default function ChiSonoPage() {
           <div className="md:col-span-7 space-y-6 text-center md:text-left">
             <TextReveal>
               <h2 className="text-[#0267C1]">
-                IDEE CHE PRENDONO FORMA.
+                UN SOLO OBIETTIVO
               </h2>
             </TextReveal>
             <TextReveal delay={0.1}>
               <p className="text-[#0267C1]/90">
-                Che si tratti di sviluppare l&apos;identità di una startup innovativa, disegnare un&apos;interfaccia ad alta conversione o modellare in 3D un oggetto dalla geometria parametrica, l&apos;obiettivo rimane lo stesso: creare un legame autentico e memorabile con chi lo vive.
+                Che si tratti di un&apos;identità per una startup, un&apos;interfaccia ad alta conversione o un oggetto in stampa 3D dalla geometria parametrica, l&apos;obiettivo resta lo stesso: creare un legame autentico con chi lo vive.
               </p>
             </TextReveal>
           </div>
@@ -107,7 +107,7 @@ export default function ChiSonoPage() {
         <div className="text-center space-y-4 max-w-2xl mx-auto">
           <TextReveal>
             <h4 className="text-[#0267C1] uppercase">
-              BRANDING, UX/UI DESIGN, STAMPA 3D E MAKER
+              COMPETENZE
             </h4>
           </TextReveal>
         </div>

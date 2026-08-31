@@ -16,12 +16,12 @@ export default function ProjectGrid() {
         <div className="text-center space-y-4 max-w-3xl mx-auto">
           <TextReveal>
             <h2 className="text-[#0267C1]">
-              PROGETTI IN EVIDENZA
+              PROGETTI SELEZIONATI
             </h2>
           </TextReveal>
           <TextReveal delay={0.1}>
             <p className="text-[#0267C1]/90">
-              Una selezione curata dei miei progetti di Branding e UX/UI Design.
+              Una selezione dei miei lavori di Branding e UX/UI Design.
             </p>
           </TextReveal>
         </div>

@@ -50,14 +50,14 @@ const LOGO_PATHS = [
 
 // Two large, smooth, sweeping architectural waves divider at the top of footer
 const FlameDivider = () => (
-  <div className="w-full overflow-hidden leading-none bg-[#F1E3CB]">
+  <div className="w-full overflow-hidden leading-none bg-[#F1E3CB] -mb-px">
     <svg
       viewBox="0 0 1200 120"
       preserveAspectRatio="none"
-      className="w-full h-[50px] sm:h-[80px] md:h-[110px] text-[#0267C1] block"
+      className="w-full h-[50px] sm:h-[80px] md:h-[110px] text-[#0267C1] block relative -mb-px"
       fill="currentColor"
     >
-      <path d="M0,120 L1200,120 L1200,50 C950,110 750,10 600,60 C450,110 250,10 0,50 Z" />
+      <path d="M-1,122 L1201,122 L1201,50 C950,110 750,10 600,60 C450,110 250,10 -1,50 Z" />
     </svg>
   </div>
 );
@@ -86,7 +86,7 @@ export default function Footer() {
 
         {/* 3 COLUMNS BODY (Reference Layout) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-start text-center md:text-left">
-          
+
           {/* COLUMN 1: Navigation / Navigazione */}
           <div className="space-y-3 flex flex-col items-center md:items-start">
             <h4 className="font-title font-bold text-base md:text-lg text-[#F1E3CB] uppercase tracking-wider">

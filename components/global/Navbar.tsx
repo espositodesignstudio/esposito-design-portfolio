@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, LayoutGroup } from "framer-motion";
 import { Home, User, Briefcase, Mail } from "lucide-react";
@@ -14,15 +15,17 @@ const NAV_ITEMS = [
 ];
 
 const MotionLink = motion.create(Link);
+const MotionAnchor = motion.create("a");
 
 export default function Navbar() {
   const pathname = usePathname();
+  const whatsappUrl = "https://wa.me/393276943832?text=Ciao%20Peppe,%20vorrei%20informazioni%20per%20un%20progetto!";
 
   return (
-    <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 z-[990] w-[calc(100vw-80px)] md:w-auto max-w-xl md:max-w-[95vw] select-none no-hover-label">
+    <nav className="fixed bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-[990] w-[calc(100vw-32px)] md:w-auto max-w-xl md:max-w-[95vw] select-none no-hover-label">
       <LayoutGroup id="navbarActiveBubbleGroup">
         {/* Apple-style Liquid Glass Container */}
-        <div className="bg-[#F1E3CB]/15 backdrop-blur-3xl text-[#0267C1] rounded-full p-2 flex items-center justify-between md:justify-center w-full gap-2 sm:gap-2.5 border border-white/50 shadow-[0_20px_50px_rgba(2,103,193,0.12),inset_0_1px_0_0_rgba(255,255,255,0.7)]">
+        <div className="bg-[#F1E3CB]/15 backdrop-blur-3xl text-[#0267C1] rounded-full p-1.5 md:p-2 flex items-center justify-between md:justify-center w-full gap-1 sm:gap-2 border border-white/50 shadow-[0_20px_50px_rgba(2,103,193,0.12),inset_0_1px_0_0_rgba(255,255,255,0.7)]">
           {NAV_ITEMS.map((item) => {
             const isActive =
               item.href === "/"
@@ -38,11 +41,11 @@ export default function Navbar() {
                 whileHover={{ scale: 1.06 }}
                 whileTap={{ scale: 0.94 }}
                 transition={{ duration: 0.2 }}
-                className={`relative flex-1 md:flex-none flex items-center justify-center p-3.5 sm:p-4 md:py-2.5 md:px-6 rounded-full text-sm md:text-base font-title font-bold tracking-wider transition-colors duration-200 cursor-pointer ${
+                className={`relative flex-1 md:flex-none flex items-center justify-center p-3 sm:p-4 md:py-2.5 md:px-6 rounded-full text-sm md:text-base font-title font-bold tracking-wider transition-colors duration-200 cursor-pointer ${
                   isActive ? "text-white" : "text-[#0267C1] hover:text-[#D56108]"
                 }`}
               >
-                {/* Horizontal Sliding Selection Pill strictly along X-axis (No Y-slide or Bounce) */}
+                {/* Horizontal Sliding Selection Pill strictly along X-axis */}
                 {isActive && (
                   <motion.div
                     layoutId="activeNavBubble"
@@ -53,18 +56,38 @@ export default function Navbar() {
                   />
                 )}
 
-                {/* Desktop view: Text ONLY (NEVER icons) */}
+                {/* Desktop view: Text ONLY */}
                 <span className="relative z-10 hidden md:inline-block font-title text-sm md:text-base font-extrabold tracking-wide whitespace-nowrap">
                   {item.label}
                 </span>
 
-                {/* Mobile view: Icons ONLY (NEVER text) */}
+                {/* Mobile view: Icons ONLY */}
                 <div className="relative z-10 flex md:hidden items-center justify-center">
-                  <IconComponent className="w-6 h-6 stroke-[2.5]" />
+                  <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]" />
                 </div>
               </MotionLink>
             );
           })}
+
+          {/* Mobile ONLY: WhatsApp Icon Link to the right of Contatti */}
+          <MotionAnchor
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.06 }}
+            whileTap={{ scale: 0.94 }}
+            transition={{ duration: 0.2 }}
+            className="flex-1 flex md:hidden items-center justify-center p-3 sm:p-4 rounded-full transition-colors duration-200 cursor-pointer"
+            aria-label="Contattami su WhatsApp"
+          >
+            <Image
+              src="/assets/whatsapp.svg"
+              alt="WhatsApp"
+              width={24}
+              height={24}
+              className="w-5 h-5 sm:w-6 sm:h-6 object-contain"
+            />
+          </MotionAnchor>
         </div>
       </LayoutGroup>
     </nav>

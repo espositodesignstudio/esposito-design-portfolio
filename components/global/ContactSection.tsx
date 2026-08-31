@@ -65,12 +65,12 @@ export default function ContactSection() {
         <div className="text-center space-y-4 max-w-2xl mx-auto">
           <TextReveal>
             <h2 className="text-[#0267C1] [text-wrap:balance]">
-              PARLIAMO DEL TUO PROGETTO
+              INIZIA IL TUO PROGETTO
             </h2>
           </TextReveal>
           <TextReveal delay={0.1}>
             <p className="text-[#0267C1]/90 max-w-xl mx-auto [text-wrap:balance]">
-              Hai una nuova idea, un&apos;esigenza di branding, UI/UX <br className="hidden sm:inline" /> o prodotti custom stampati in 3D? Compila il form qui sotto.
+              Hai un&apos;idea, un&apos;esigenza di branding, UI/UX o un prodotto da realizzare in stampa 3D? Raccontamelo.
             </p>
           </TextReveal>
         </div>

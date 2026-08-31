@@ -91,14 +91,13 @@ export default function ContattiPage() {
       <section className="max-w-4xl mx-auto px-6 md:px-12 my-[80px] md:my-[150px] text-center space-y-6">
         <TextReveal>
           <h1 className="text-[#0267C1] font-pally-bold [text-wrap:balance]">
-            <span className="block sm:inline whitespace-nowrap font-pally-bold">INFORMAZIONI</span>{" "}
-            <span className="block sm:inline whitespace-nowrap font-pally-bold">DI CONTATTO</span>
+            I MIEI CONTATTI
           </h1>
         </TextReveal>
 
         <TextReveal delay={0.1}>
           <p className="text-[#0267C1]/90 max-w-2xl mx-auto">
-            Vuoi discutere un progetto, richiedere informazioni sulle lavorazioni in Stampa 3D? Trovi qui tutti i recapiti e i canali diretti.
+            Vuoi discutere un progetto, informazioni sulla stampa 3D o parlare di design? Trovi qui tutti i recapiti.
           </p>
         </TextReveal>
       </section>
